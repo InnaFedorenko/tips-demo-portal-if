@@ -13,15 +13,10 @@ import './index.css';
 
 // Import components for different pages
 import App from './App.jsx';
-//import ContactPage from './pages/ContactPage.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import Home from './pages/HomePage.jsx';
 import DeviceActions from './pages/DeviceActionsPage';
 import PaymentActions from './pages/PaymentActionsPage';
-//import PortfolioPage from './pages/PortfolioPage.jsx';
-//import ResumePage from './pages/ResumePage.jsx';
-
-
 
 // Create a router configuration using createBrowserRouter
 const router = createBrowserRouter([
@@ -35,12 +30,12 @@ const router = createBrowserRouter([
         element: <Home /> // The Home page component
         },
         {
-        path: '/device-actions',
-        element: <DeviceActions /> // The Home page component
+        path: '/device',
+        element: <DeviceActions /> // The DeviceActions page component
         },
         {
-        path: '/payment-actions',
-        element: <PaymentActions /> // The Home page component
+        path: '/payment',
+        element: <PaymentActions /> // The Payment Action page component
         }
 
     ]
